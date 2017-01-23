@@ -1,0 +1,123 @@
+#komentar
+MAP
+	IMAGETYPE	PNG
+	EXTENT		94.972335 -11.009721 141.011765 6.077241
+	SIZE		1200 600
+	SHAPEPATH	"C:/ms4w/apps/gistask/data/"
+	IMAGECOLOR	200 200 200
+	#localhost:8000/cgi-bin/mapserv.exe?map=C:/ms4w/apps/gistask/state.map&mode=map
+	
+	LAYER		
+		NAME	adm_pulau
+		DATA	IDN_adm/IDN_adm0
+		STATUS	ON
+		TYPE	POLYGON
+		
+		CLASS
+			NAME	"class_adm_pulau"
+			STYLE
+				COLOR 255 255 255
+				OUTLINECOLOR 0 0 255
+				#localhost:8000/cgi-bin/mapserv.exe?map=C:/ms4w/apps/gistask/state.map&mode=map&layer=adm_pulau
+			END
+		END
+	END
+	###############################################################################################
+	LAYER		
+		NAME	adm_provinsi
+		DATA	IDN_adm/IDN_adm1
+		STATUS	ON
+		TYPE	POLYGON
+		
+		CLASS
+			NAME	"class_adm_provinsi"
+			STYLE
+				COLOR 255 255 255
+				OUTLINECOLOR 0 255 0
+				#localhost:8000/cgi-bin/mapserv.exe?map=C:/ms4w/apps/gistask/state.map&mode=map&layer=adm_provinsi
+			END
+		END
+	END
+	###############################################################################################
+	LAYER		
+		NAME	adm_kota
+		DATA	IDN_adm/IDN_adm2
+		STATUS	ON
+		TYPE	POLYGON
+		
+		CLASS
+			NAME	"class_adm_kota"
+			STYLE
+				COLOR 255 255 255
+				OUTLINECOLOR 255 0 0
+				#localhost:8000/cgi-bin/mapserv.exe?map=C:/ms4w/apps/gistask/state.map&mode=map&layer=adm_kota
+			END
+		END
+	END
+	###############################################################################################
+	LAYER		
+		NAME	roads
+		DATA	IDN_rds/IDN_roads
+		STATUS	ON
+		TYPE	LINE
+		
+		CLASS
+			NAME	"class_roads"
+			STYLE
+				COLOR 255 0 255
+				#OUTLINECOLOR 0 255 255
+				#localhost:8000/cgi-bin/mapserv.exe?map=C:/ms4w/apps/gistask/state.map&mode=map&layer=roads
+			END
+		END
+	END
+	###############################################################################################
+	LAYER		
+		NAME	rails
+		DATA	IDN_rrd/IDN_rails
+		STATUS	ON
+		TYPE	LINE
+		
+		CLASS
+			NAME	"class_rails"
+			STYLE
+				COLOR 0 0 0
+				#OUTLINECOLOR 0 255 255
+				#localhost:8000/cgi-bin/mapserv.exe?map=C:/ms4w/apps/gistask/state.map&mode=map&layer=rails
+			END
+		END
+	END
+	###############################################################################################
+	LAYER		
+		NAME	water_lines
+		DATA	IDN_wat/IDN_water_lines_dcw
+		STATUS	ON
+		TYPE	LINE
+		
+		CLASS
+			NAME	"class_water_lines"
+			STYLE
+				COLOR 20 90 200
+				#OUTLINECOLOR 0 255 255
+				#localhost:8000/cgi-bin/mapserv.exe?map=C:/ms4w/apps/gistask/state.map&mode=map&layer=water_lines
+			END
+		END
+	END
+	###############################################################################################
+	LAYER		
+		NAME	water_areas
+		DATA	IDN_wat/IDN_water_areas_dcw
+		STATUS	ON
+		TYPE	POLYGON
+		
+		CLASS
+			NAME	"class_water_areas"
+			STYLE
+				COLOR 255 255 255
+				OUTLINECOLOR 100 50 150
+				#localhost:8000/cgi-bin/mapserv.exe?map=C:/ms4w/apps/gistask/state.map&mode=map&layer=water_areas
+			END
+		END
+	END
+	###############################################################################################
+	
+END
